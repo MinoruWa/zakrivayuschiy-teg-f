@@ -165,11 +165,11 @@ dialog[open] {
 .ok__button_text {
   text-transform: uppercase;
 }
-dialog use#floppy { 
+dialog use#floppy {
   grid-row: 1;
   grid-column: 1 / 2;
 }
-.button use#floppy { 
+.button use#floppy {
   grid-row: 1;
   grid-column: 1 / 2;
 }
@@ -202,7 +202,7 @@ dialog use#floppy {
   filter:contrast(300%);
 }
 .grayscale {
-  filter:grayscale(50%), sepia(0.6);
+  filter:grayscale(50%) sepia(0.6);
 }
 .hue-rotate {
   filter:hue-rotate(0.5turn);
@@ -220,8 +220,11 @@ dialog use#floppy {
   width:21px;
   height: 21px;
   display: flex;
-  z-index:1;
   overflow: visible;
+  position: relative;
+  z-index: 2;
+  color:var(--white-color);
+  mix-blend-mode: difference;
 }
 .button:focus-visible {
   outline:none;
@@ -239,17 +242,11 @@ dialog use#floppy {
   z-index:0;
 }
 .button:hover svg,          
-.button:focus svg { 
+.button:focus svg {
   z-index:2;
 }
 .button:hover::after {
   transform:scaleX(1);
-}
-.save__button svg {
-  position: relative;
-  z-index: 2;
-  color:var(--white-color);
-  mix-blend-mode: difference;
 }
 .card__icon-button {
   outline: none;
