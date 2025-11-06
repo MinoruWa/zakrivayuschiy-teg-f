@@ -1,1 +1,20 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+    /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root { 
+    --inter:'Inter', sans-serif;
+    --pressstart: 'PressStart2P', sans-serif;
+    --regular:'wght' 410;
+    --black:'wght' 715;
+    --background:repeating-linear-gradient(to right, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px), repeating-linear-gradient(to bottom, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px), linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+    --block-clamp: clamp(375px, 260.56px + 30.52vw, 700px);
+    --logo-clamp:clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
+    --stroke-color:rgba(255, 255, 255, 1);
+    --h1-clamp:clamp(14px, 10.83px + 0.85vw, 23px);
+    --image-block-margin:clamp(177px, 62.56px + 30.52vw, 502px);
+    --header-height:clamp(327px, 312.56px + 3.85vw, 368px);
+    --white-color:#fff;
+    --black-color:#000;
+    --contour:#000;
+    --animation-fill-color:rgba(255, 0, 0, 1);
+    --core-color:#fff;
+}
