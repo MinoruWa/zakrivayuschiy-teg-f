@@ -220,8 +220,6 @@ dialog use#floppy {
   width:28px;
   height: 28px;
 }
-dialog[open] svg {
-}
 .ok__button {
   width:261px;
   height: 38px;
