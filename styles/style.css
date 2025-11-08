@@ -64,9 +64,6 @@ main {
   background-color:#fff;
   border: 2px solid #000;
 }
-img {
-  display: block;
-}
 .image {
   height: 100%;
   width: 100%;
@@ -166,7 +163,10 @@ dialog[open] {
   display:grid;
   align-items: center;
   width:353px;
-  height: 191px;
+  padding:30px;
+  overflow: hidden;
+  margin-block-end:384.5px;
+  margin-inline: 543.5px;
 }
 .ok__button_text {
   text-transform: uppercase;
@@ -198,9 +198,6 @@ dialog use#floppy {
   height: 38px;
   justify-self: center;
 }
-dialog[open] svg {
-  margin-inline-start:10px;
-}
 @media (width <= 375px) {
   h1 {
     margin-left:0;
@@ -215,19 +212,20 @@ dialog[open] svg {
   }
   dialog[open] {
     width:341px;
-    height: 191px;
+    padding:30px 40px;
+    margin-inline: 17px;
+    margin-block-end: 240px;
   }
   .save__button svg {
   width:28px;
   height: 28px;
 }
 dialog[open] svg {
-  margin-inline-start: 20px;
 }
 .ok__button {
   width:261px;
   height: 38px;
-  justify-self: center;
+
 }
 }
 .brightness {
