@@ -162,11 +162,7 @@ dialog::backdrop {
 dialog[open] {
   display:grid;
   align-items: center;
-  width:353px;
   padding:30px;
-  overflow: hidden;
-  margin-block-end:384.5px;
-  margin-inline: 543.5px;
 }
 .ok__button_text {
   text-transform: uppercase;
@@ -211,10 +207,7 @@ dialog use#floppy {
     margin-block-end: 100px;
   }
   dialog[open] {
-    width:341px;
-    padding:30px 40px;
-    margin-inline: 17px;
-    margin-block-end: 240px;
+    padding:30px 35px;
   }
   .save__button svg {
   width:28px;
